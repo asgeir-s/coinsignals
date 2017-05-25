@@ -1,8 +1,8 @@
-var ConvertLib = artifacts.require("./ConvertLib.sol");
-var MetaCoin = artifacts.require("./MetaCoin.sol");
+var Signals = artifacts.require("./Signals.sol");
+var StringUtils = artifacts.require("./StringUtils.sol");
 
-module.exports = function(deployer) {
-  deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(MetaCoin);
+module.exports = function (deployer) {
+  deployer.deploy(StringUtils);
+  deployer.link(StringUtils, Signals);
+  deployer.deploy(Signals);
 };
