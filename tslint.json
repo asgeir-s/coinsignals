@@ -105,13 +105,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "cs",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "cs",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
