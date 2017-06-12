@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { SignalsContractService } from './signals.contract.service';
+import { PositionsContractService } from './positions.contract.service';
 
 describe('SignalsContractService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [SignalsContractService]
+      providers: [PositionsContractService]
     });
   });
 
-  it('should be created', inject([SignalsContractService], (service: SignalsContractService) => {
+  it('should be created', inject([PositionsContractService], (service: PositionsContractService) => {
     expect(service).toBeTruthy();
   }));
 });

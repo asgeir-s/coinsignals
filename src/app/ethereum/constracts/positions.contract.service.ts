@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core'
 import { default as contract } from 'truffle-contract'
 
-import { SignalsArtifacts } from './signals.abi'
+import { SignalsArtifacts } from './positions.abi'
 import { Web3Service } from "../web3.service"
 import { Position } from "../../types/Position.d";
 
 @Injectable()
-export class SignalsContractService {
+export class PositionsContractService {
 
     private signalsContract: any
 
