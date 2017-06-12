@@ -54,15 +54,15 @@ contract Signals{
 	    balance[msg.sender] += signals[msg.sender][signalIndex].amont;
 	}
 	
-	function getNumberOfSignals(address addr) returns (uint) {
+	function getNumberOfPositions(address addr) returns (uint) {
 	    return signals[addr].length;
 	}
 	
-	function getSignal(address addr, uint index) returns(string, uint, uint, bool) {
+	function getPosition(address addr, uint index) returns(string, uint, uint, bool) {
 		return (signals[addr][index].coin, signals[addr][index].amont, signals[addr][index].timestamp, signals[addr][index].closed);
 	}
 
-	function getName(address addr) returns (string) {
+	function getStreamName(address addr) returns (string) {
 		return names[addr];
 	}
 }
