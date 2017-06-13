@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Position } from "../types/Position.d";
+import { Position } from "../../types/Position.d";
 
 @Component({
   selector: 'cs-position-list',
