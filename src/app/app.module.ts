@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { RouterModule } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { PositionListComponent } from './components/position-list/position-list.component';
@@ -13,6 +15,7 @@ import { StreamListComponent } from './components/stream-list/stream-list.compon
 import { OpenPositionComponent } from './components/open-position/open-position.component';
 import { StreamsViewComponent } from './components-top/streams-view/streams-view.component';
 import { SingleStreamViewComponent } from './components-top/single-stream-view/single-stream-view.component';
+import { RoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { SingleStreamViewComponent } from './components-top/single-stream-view/s
   imports: [
     BrowserModule,
     FormsModule,
+    RoutingModule,
     HttpModule,
     BrowserAnimationsModule,
     NgxDatatableModule,
