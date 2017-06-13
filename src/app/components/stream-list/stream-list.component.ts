@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Stream } from "../../types/Stream.d";
 
 @Component({
-  selector: 'app-stream-list',
+  selector: 'cs-stream-list',
   templateUrl: './stream-list.component.html',
   styleUrls: ['./stream-list.component.css']
 })

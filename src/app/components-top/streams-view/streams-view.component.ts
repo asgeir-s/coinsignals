@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-streams-view',
+  selector: 'cs-streams-view',
   templateUrl: './streams-view.component.html',
   styleUrls: ['./streams-view.component.css']
 })
